@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This project implements a complete, end-to-end personalized book recommendation system based on the Book-Crossing dataset. The primary goal was to build a hybrid model that leverages both collaborative filtering and content-based features to provide relevant recommendations for users. The entire pipeline, from advanced data cleaning and feature engineering to model training, hyperparameter optimization, and deployment via an interactive dashboard, follows State-of-the-Art (SOTA) and production-ready best practices.
+This project implements a complete, end-to-end personalized book recommendation system based on the Book-Crossing dataset. The primary goal was to build a hybrid model that leverages both collaborative filtering and content-based features to provide relevant recommendations for users. The entire pipeline, from advanced data cleaning and feature engineering to model training, hyperparameter optimization, and deployment via an interactive dashboard, is production-ready.
 
 **Core Task:** To build a system that can effectively learn user and item representations to provide:
 1.  Personalized recommendations for known users.
@@ -148,3 +148,7 @@ While a full production-grade implementation of DVC (Data Version Control) is no
   - **Analytics**: Log all versions/metrics to ClickHouse for fast querying (e.g., "SELECT avg(NDCG) FROM models WHERE version > 'v1.0'"), enabling A/B tests and drift detection.
 
 This approach ensures auditability (e.g., reproduce v1.2 from specific data hash) while scaling to production e-commerce loads, aligning with SOTA MLOps from AWS/Netflix patterns. For this assignment, Git + manual MLflow simulates it; full setup would use CI/CD (GitHub Actions) for automation.
+* Graph of  complete pipeline 
+<div align="center">
+  <img width="501" alt="dependency_dag_chart_v2" src="https://github.com/user-attachments/assets/4d0d2b9f-a600-4259-a172-f80913a7d61e">
+</div>
