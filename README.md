@@ -10,6 +10,15 @@ This project implements a complete, end-to-end personalized book recommendation 
 3.  Robust fallback strategies for new ("cold start") users and items.
 
 ---
+### Relevant Professional Experience
+
+The architecture and design choices in this project are informed by my hands-on experience developing a production recommender system at **Banomode.com**. In that role, I led the implementation of a system based on CatBoost, making key strategic decisions based on business,but here I use ha ybrid use of two towers and vector database.
+### constraints and data characteristics:
+
+*   **Model Choice:** Selected CatBoost due to its exceptional handling of the rich categorical features inherent in our apparel-focused dataset.
+*   **System Design:** To balance performance and operational cost, we designed an efficient offline system. The model ran twice daily to generate a comprehensive "knowledge base" of recommendations.
+*   **Business Impact:** This knowledge base was successfully used to power multiple user-facing features, including real-time search results, personalized recommendations, and targeted marketing campaigns.
+
 
 ## Key Features & Technical Decisions
 
